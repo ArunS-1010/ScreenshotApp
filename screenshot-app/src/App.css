@@ -16,7 +16,6 @@ nav {
 
 .input-container {
   display: flex;
-
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
@@ -33,7 +32,6 @@ nav {
 .input-box-container input {
   flex: 0 0 calc(45% - 5px);
   margin-bottom: 10px;
-  gap: 20px;
   padding: 10px;
   margin: 5px 0px;
 }
@@ -81,6 +79,8 @@ nav {
 .image-container img {
   border: 6px solid rgb(56, 56, 56);
   border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 .download-btn {
@@ -126,7 +126,6 @@ nav {
 
   .input-box-container {
     width: 100%;
-
     flex-direction: column;
   }
 
@@ -136,7 +135,6 @@ nav {
 }
 
 /* tablet view  */
-
 @media (max-width: 991px) {
   .main {
     padding: 0;
@@ -254,4 +252,17 @@ nav {
 
 .download-all-btn-container {
   margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .image-wrapper {
+    flex: 0 1 calc(45% - 20px);
+  }
+}
+
+@media (max-width: 991px) {
+  .image-wrapper {
+    flex: 0 1 calc(100% - 20px);
+  }
 }
